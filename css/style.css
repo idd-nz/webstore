@@ -258,7 +258,7 @@ form{
 
 
 /* result */
-.container{
+.products{
   display: grid;
   grid-template-areas:
       "p1 p2"
@@ -269,7 +269,7 @@ form{
 }
 
 /* thumb-up */
-.container .material-icons{
+.products .material-icons{
   font-size: 18px;
   /* color: rgba(0,0,0,0.54); */
   background-color: transparent;
@@ -278,7 +278,7 @@ form{
   color: #04312b;
 }
 
-.container .material-icons:hover{
+.products .material-icons:hover{
   color: #c69200;
   opacity: 1.0;
   filter: alpha(opacity=100);
@@ -315,6 +315,53 @@ p{
   color: #494949;
 }
 
+/* select size */
+.selectbtn{
+  background-color: black;
+  color: white;
+  padding: 0.1em;
+  font-size: 0.8em;
+  border: none;
+}
+
+.select{
+  position: relative;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.selectopt{
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.selectopt a{
+  color: #000;
+  padding: 0.1em;
+  text-decoration: none;
+  display: block;
+}
+
+.selectopt a:hover {
+  background-color: #dddddd;
+}
+
+.select:hover .selectopt{
+  display: block;
+}
+
+.select:hover .selectbtn{
+  background-color: black;
+}
+
+
+
+
+
+
 /* quantity button */
 .quantity-button .input-text {
   text-align: center;
@@ -325,6 +372,7 @@ p{
 
 .quantity-button{
   text-align: center;
+  padding-top: 2em;
 }
 
 /* pages */
