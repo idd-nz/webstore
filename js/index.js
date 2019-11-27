@@ -71,7 +71,16 @@ function getProductAsHtmlString(product){
             
             <p>${product.descrip}</p>
             <p style="text-align: center">${product.price}</p>
-            
+            <section>
+              <div class="select">
+              <button class="selectbtn">Select Size</button>
+              <div class="selectopt">
+                <a href="#">20g</a>
+                <a href="#">40g</a>
+                <a href="#">60g</a>
+              <div>
+              <div>
+            </section>
             <div class="quantity-button">
               <input type="button" value="-" class="minus">
               <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
@@ -89,14 +98,7 @@ function getProductAsHtmlString(product){
                 <i class="material-icons">star_border</i>
             </div>
 
-            <div class="select">
-              <button class="selectbtn">Select Size</button>
-              <div class="selectopt">
-                <a href="#">20g</a>
-                <a href="#">40g</a>
-                <a href="#">60g</a>
-              <div>
-            <div>
+           
           </article>`;
 }
 
