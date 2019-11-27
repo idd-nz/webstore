@@ -86,7 +86,7 @@ function getProductAsHtmlString(product){
               <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
               <input type="button" value="+" class="plus">
             </div>
-            <p style="opacity: 40%"> ${product.quantity} </p>
+            <p style="opacity: 100%; color:red;"> ${product.quantity} </p>
             <div class="add">
               <button id="add to cart">Add to cart</button>
             </div>
