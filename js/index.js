@@ -1,62 +1,109 @@
-const product1 = {
-  img: `img/bathbomb.jpg`,
-  name: `Charcool`,
-  item: `bathbomb`,
-  descrip: `blend of charcoal and lemon oil`,
-  price: `$12/20g`,
-  quantity: `stock running low`
+// const product1 = {
+//   img: `img/bathbomb.jpg`,
+//   name: `Charcool`,
+//   item: `bathbomb`,
+//   descrip: `blend of charcoal and lemon oil`,
+//   price: `$12/20g`,
+//   quantity: `stock running low`
 
-};
+// };
 
-const product2 = {
-  img: `img/bodylotion.jpg`,
-  name: `Banana Body`,
-  item: `body lotion`,
-  descrip: `ultra fantastic, all natural skincare`,
-  price: `$15/20g`,
-  quantity: `in stock`
+// const product2 = {
+//   img: `img/bodylotion.jpg`,
+//   name: `Banana Body`,
+//   item: `body lotion`,
+//   descrip: `ultra fantastic, all natural skincare`,
+//   price: `$15/20g`,
+//   quantity: `in stock`
 
-};
+// };
 
-const product3 = {
-  img: `img/bodywash1.jpg`,
-  name: `Avowash`,
-  item: `body wash`,
-  descrip: `avocado & strawberry`,
-  price: `$18/20g`,
-  quantity: `in stock`
+// const product3 = {
+//   img: `img/bodywash1.jpg`,
+//   name: `Avowash`,
+//   item: `body wash`,
+//   descrip: `avocado & strawberry`,
+//   price: `$18/20g`,
+//   quantity: `in stock`
 
-};
+// };
 
-const product4 = {
-  img: `img/bodywash2.jpg`,
-  name: `Grapy Soapy`,
-  item: `body wash`,
-  descrip: `rich,fruity hydration`,
-  price: `$20/20g`,
-  quantity: `out of stock`
+// const product4 = {
+//   img: `img/bodywash2.jpg`,
+//   name: `Grapy Soapy`,
+//   item: `body wash`,
+//   descrip: `rich,fruity hydration`,
+//   price: `$20/20g`,
+//   quantity: `out of stock`
 
-};
+// };
 
-const product5 = {
-  img: `img/bodywax.jpg`,
-  name: `Tuty Fruity`,
-  item: `body wax`,
-  descrip: `smooth and silky finish`,
-  price: `$20/20g`,
-  quantity: `stock running low`
+// const product5 = {
+//   img: `img/bodywax.jpg`,
+//   name: `Tuty Fruity`,
+//   item: `body wax`,
+//   descrip: `smooth and silky finish`,
+//   price: `$20/20g`,
+//   quantity: `stock running low`
 
-};
+// };
 
-const product6 = {
-  img: `img/handsoap.jpg`,
-  name: `Handy Melon`,
-  item: `hand soap`,
-  descrip: `buttery softness`,
-  price: `$10/20g`,
-  quantity: `re-stocked`
+// const product6 = {
+//   img: `img/handsoap.jpg`,
+//   name: `Handy Melon`,
+//   item: `hand soap`,
+//   descrip: `buttery softness`,
+//   price: `$10/20g`,
+//   quantity: `re-stocked`
 
-};
+// };
+
+const products = [
+  {
+    img: `img/bathbomb.jpg`,
+    name: `Charcool`,
+    item: `bathbomb`,
+    descrip: `blend of charcoal and lemon oil`,
+    price: `$12/20g`,
+    quantity: `stock running low`
+  },{
+    img: `img/bodylotion.jpg`,
+    name: `Banana Body`,
+    item: `body lotion`,
+    descrip: `ultra fantastic, all natural skincare`,
+    price: `$15/20g`,
+    quantity: `in stock`
+  },{
+    img: `img/bodywash1.jpg`,
+    name: `Avowash`,
+    item: `body wash`,
+    descrip: `avocado & strawberry`,
+    price: `$18/20g`,
+    quantity: `in stock`
+  },{
+    img: `img/bodywash2.jpg`,
+    name: `Grapy Soapy`,
+    item: `body wash`,
+    descrip: `rich,fruity hydration`,
+    price: `$20/20g`,
+    quantity: `out of stock`
+  },{
+    img: `img/bodywax.jpg`,
+    name: `Tuty Fruity`,
+    item: `body wax`,
+    descrip: `smooth and silky finish`,
+    price: `$20/20g`,
+    quantity: `stock running low`
+  },{
+    img: `img/handsoap.jpg`,
+    name: `Handy Melon`,
+    item: `hand soap`,
+    descrip: `buttery softness`,
+    price: `$10/20g`,
+    quantity: `re-stocked`
+  
+  }
+]
 
 
 
@@ -102,9 +149,19 @@ function getProductAsHtmlString(product){
           </article>`;
 }
 
-document.getElementById('products').innerHTML = getProductAsHtmlString(product1)
-document.getElementById('products').innerHTML += getProductAsHtmlString(product2)
-document.getElementById('products').innerHTML += getProductAsHtmlString(product3)
-document.getElementById('products').innerHTML += getProductAsHtmlString(product4)
-document.getElementById('products').innerHTML += getProductAsHtmlString(product5)
-document.getElementById('products').innerHTML += getProductAsHtmlString(product6)
+// document.getElementById('products').innerHTML = getProductAsHtmlString(product1)
+// document.getElementById('products').innerHTML += getProductAsHtmlString(product2)
+// document.getElementById('products').innerHTML += getProductAsHtmlString(product3)
+// document.getElementById('products').innerHTML += getProductAsHtmlString(product4)
+// document.getElementById('products').innerHTML += getProductAsHtmlString(product5)
+// document.getElementById('products').innerHTML += getProductAsHtmlString(product6)
+
+function renderProducts(arrToRender){
+  const arrOfHtmlProducts = arrToRender.map(getProductAsHtmlString);
+  const strOfHtmlProducts = arrOfHtmlProducts.join('\n');
+  document.getElementById('products').innerHTML = strOfHtmlProducts;
+  // console.log(strOfHtmlProducts);
+  
+}
+
+renderProducts(products);
