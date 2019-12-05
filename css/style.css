@@ -271,10 +271,7 @@ form{
 /* thumb-up */
 .products .material-icons{
   font-size: 18px;
-  /* color: rgba(0,0,0,0.54); */
   background-color: transparent;
-  /* opacity: 0.5;
-  filter: alpha(opacity= 50); */
   color: #04312b;
 }
 
@@ -306,6 +303,7 @@ form{
 /* stars */
 .rate .material-icons{
   color:#d1a102;
+  padding-bottom: 1em;
 } 
 
 p{
