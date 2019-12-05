@@ -101,6 +101,34 @@ const products = [
     descrip: `buttery softness`,
     price: `$10/20g`,
     quantity: `re-stocked`
+  },{
+    img: `img/bodybomb1.jpg`,
+    name: `Saturn`,
+    item: `bath bomb`,
+    descrip: `blend of strawberry and blueberry`,
+    price: `$9/20g`,
+    quantity: `in stock`
+  },{
+    img: `img/bodybutter.jpg`,
+    name: `Sweet GBM`,
+    item: `body lotion`,
+    descrip: `buttery coco and peppermint`,
+    price: `$11/20g`,
+    quantity: `out of stock`
+  },{
+    img: `img/bodysoap1.jpg`,
+    name: `Cloudy Unicorn`,
+    item: `body soap`,
+    descrip: `angel to bare skin`,
+    price: `$10/20g`,
+    quantity: `in stock`
+ },{
+    img: `img/handsoap1.jpg`,
+    name: `Helping Hand`,
+    item: `hand soap`,
+    descrip: `help is on the way`,
+    price: `$8/20g`,
+    quantity: `stock running low`
   
   }
 ]
