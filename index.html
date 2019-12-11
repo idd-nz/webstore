@@ -40,36 +40,53 @@
        
       <button type="button" class="hambmenu">
         <i class="material-icons">menu</i>
-      </button>    
-        
+      </button> 
+      <!-- <section class="main_menu">
+        <h3><button type="button" class="hambmenu"><i class="material-icons">menu</i></button></h3>
+        <h3>Menu</h3>
+        <div class="main_menuopt">
+          <select name="menu" id="menu">
+            <option value="home">Home</option>
+            <option value="new">New</option>
+            <option value="hair">Hair</option>
+            <option value="face">Face</option>
+            <option value="body">Body</option>
+            <option value="more">More</option>
+          </select>
+        </div> 
+      </section>    -->
+      <!-- <section>
+          <div class="menu">
+          <button class="menubtn">Menu</button>
+          <div class="menuopt">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Hair</a>
+            <a href="#">Body</a>
+            <a href="#"></a>
+          <div>
+          <div>
+        </section> -->
         
        
     <!-- </article> -->
 
       <!-- Additional nav links -->
-     
+<!--      
         <ul class="menu">
           <li><a href="#">Home </a></li>
           <li><a href="#">New </a></li>
-                <!-- <div class="submenu">
-                  <a href="#">- Summer Special</a>
-                  <a href="#">- Online Exclusive</a>
-                  <a href="#">- Vegan Collection</a>
-                </div> -->
           <li><a href="#">Hair </a></li>
           <li><a href="#">Face </a></li>
           <li><a href="#">Body </a></li>
           <li><a href="#">More </a></li>
-        </ul>
+        </ul> -->
 
-        <ul class="topcorner">
-          <!-- <li><a href="#"><i class="material-icons">person</i></a></li>
-          <li><a href="#"><i class="material-icons">thumb_up</i></a></li> -->
-          <li><a href="#"><i class="material-icons" style="margin: 0.5em">search</i></a></li>
-          <li><a href="#"><i class="material-icons">shopping_basket</i></a></li>
-        </ul>
+        <section class="topcorner">
+          <a href="#"><i class="material-icons">shopping_basket</i></a>
+        </section>
             
-              
+        
         
      </nav>
     </header>
@@ -78,247 +95,60 @@
       <header>
         <div class="current"><h2>currently browsing...</h2></div>
         <h1 style="text-align: center">Online Exclusive</h1>
+        <button id="toggleview" class="btn-view">Toggle View</button>
 
         <!-- Filtering product form -->
         <form>
-            <!-- <div class="list">
-              <a href="#"><i class="material-icons">filter_list</i></a>
-            </div> -->
-          <fieldset class="sort">
-            <h3 >Sort By</h3>
-            <select name="sort" id="sort">
-              <option value="none">None</option>
-              <option value="newest">Newest releases</option>
-              <option value="best">Best reviewed</option>
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low" selected>Price, lowest to highest</option>
-            </select>
-          </fieldset>
-          <fieldset class="rating">
-            <h3>Rating</h3>
-            <select name="rating" id="rating">
-                <option value="5">5 stars</option>
-                <option value="4">4 stars</option>
-                <option value="3">3 stars</option>
-                <option value="2">2 stars</option>
-                <option value="all" selected>All</option>
-            </select>
-          </fieldset>
-          <fieldset class="target">
-            <h3>Target Area</h3>
-            <ul>
-              <li><input type="radio" name="target" value="hair" id="Hair"> <label for="Hair">Hair</label></li>
-              <li><input type="radio" name="target" value="face" id="Face"> <label for="Face">Face</label></li>
-              <li><input type="radio" name="target" value="body" id="Body" checked> <label for="Body">Body</label></li>
-            </ul>
-          </fieldset>
-          <fieldset class="scent">
-            <h3>Scent</h3>
-            <ul>
-              <li><input type="radio" name="scent" value="citrusy" id="citrusy"> <label for="citrusy">Citrusy</label></li>
-              <li><input type="radio" name="scent" value="floral" id="floral"> <label for="floral">Floral</label></li>
-              <li><input type="radio" name="scent" value="herbal" id="herbal"> <label for="herbal">Herbal</label></li>
-              <li><input type="radio" name="scent" value="sweet" id="sweet"> <label for="sweet">Sweet</label></li>
-              <li><input type="radio" name="scent" value="oriental" id="oriental"> <label for="oriental">Oriental</label></li>
-              <li><input type="radio" name="scent" value="fruity" id="fruity" checked> <label for="fruity">Fruity</label></li>
-            </ul>
-          </fieldset>
-          <fieldset class="concern">
-            <h3>Concern</h3>
-            <ul>
-              <li><input type="radio" name="concern" value="dehydrated" id="dehydrated" checked> <label for="dehydrated">Dehydrated skin</label></li>
-              <li><input type="radio" name="concern" value="dull" id="dull"> <label for="dull">Dull skin</label></li>
-              <li><input type="radio" name="concern" value="sensitive" id="sensitive"> <label for="sensitive">Sensitive skin</label></li>
-              <li><input type="radio" name="concern" value="oily" id="oily"> <label for="oily">Oily skin</label></li>
-              <li><input type="radio" name="concern" value="dry" id="dry"> <label for=""dry>Dry hair</label></li>
-              <li><input type="radio" name="concern" value="greasy" id="greasy"> <label for="greasy">Greasy hair</label></li>
-            </ul>
-          </fieldset>
-          <fieldset class="mood">
-            <h3>Mood</h3>
-            <ul>
-              <li><input type="radio" name="mood" value="energy" id="energy"> <label for="energy">Energizing</label></li>
-              <li><input type="radio" name="mood" value="relax" id="relax" checked> <label for="relax">Relaxing</label></li>
-            </ul>
-          </fieldset>
-          
+        <section>
+          <div class="filter">
+            <h3><button class="filterbtn">FILTER</button></h3>
+            <div class="filteropt">
+                <fieldset class="search">
+                    <h3><label>Search</label></h3>
+                    <input type="text" name="name" id="name" value="">
+                </fieldset>
+                <fieldset class="sort">
+                    <h3>Sort By</h3>
+                    <select name="sort" id="sort">
+                      <option value="all">All</option>
+                      <option value="price-high">Price, highest to lowest</option>
+                      <option value="price-low" selected>Price, lowest to highest</option>
+                    </select>
+                </fieldset>
+            
+                <fieldset class="scent">
+                    <h3>Scent</h3>
+                    <select name="scent" id="scent">
+                      <option value="all">All</option>
+                      <option value="citrus">Citrus</option>
+                      <option value="floral">Floral</option>
+                      <option value="fruity">Fruity</option>
+                      <option value="sweet">Sweet</option>
+                    </select>
+                </fieldset>
+           
+                <fieldset class="category">
+                    <h3>Category</h3>
+                    <select name="category" id="category">
+                      <option value="all">All</option>
+                      <option value="bath-bomb">Bath bomb</option>
+                      <option value="body-wash">Body wash</option>
+                      <option value="body-lotion">Body lotion</option>
+                      <option value="body-wax">Body wax</option>
+                      <option value="body-soap">Body soap</option>
+                      <option value="hand-soap">Hand soap</option>
+                    </select>
+                </fieldset>
+            
+            <div>
+          <div>
+        </section>
         </form>
       </header>
       
       <h2 style="text-align: center;">top results...</h2>
       <section id="products">
-        <!-- Product 1 -->
-        <!-- <article class="product1">
-          <div><img src="img/bathbomb.jpg" alt="Product Bathbomb"></div>
-          <h3>Charcool</h3>
-          <h4>bathbomb</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-          
-          <p>blend of charcoal and lemon oil</p>
-          <p style="text-align: center">$12.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_half</i>
-              <i class="material-icons">star_border</i>
-          </div>
-
-          <div class="select">
-            <button class="selectbtn">Select Size</button>
-            <div class="selectopt">
-            <a href="#">20g</a>
-            <a href="#">40g</a>
-            <a href="#">60g</a>
-          <div>
-        </article> -->
-
-        <!-- Product 2 -->
-        <!-- <article class="p2">
-          <div clas="img2"><img src="img/bodylotion.jpg" alt="Product Bodylotion"></div>
-          <h3>Banana Body</h3>
-          <h4>body lotion</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-          
-          <p>ultra fantastic, all natural skincare</p>
-          <p style="text-align: center">$15.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_border</i>
-          </div>
-        
-          <div class="select">
-            <button class="selectbtn">Select Size</button>
-            <div class="selectopt">
-            <a href="#">20g</a>
-            <a href="#">40g</a>
-            <a href="#">60g</a>
-          <div>
-        
-        </article> -->
-
-        <!-- Product 3 -->
-        <!-- <article class="p3">
-          <div><img src="img/bodywash1.jpg" alt="Product Bodywash1"></div>
-          <h3>Avowash</h3>
-          <h4>body wash</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-          
-          <p>avocado & strawberry</p>
-          <p style="text-align: center">$18.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_border</i>
-              <i class="material-icons">star_border</i>
-          </div>
-        </article> -->
   
-        <!-- Product 4 -->
-        <!-- <article class="p4">
-          <div><img src="img/bodywash2.jpg" alt="Product Bodywash2"></div>
-          <h3>Grapy Soapy</h3>
-          <h4>body wash</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-          
-          <p>rich, fruity hydration</p>
-          <p style="text-align: center">$20.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_half</i>
-          </div>
-        </article> -->
-
-        <!-- Product 5 -->
-        <!-- <article class="p5">
-          <div><img src="img/bodywax.jpg" alt="Product Bodywax"></div>
-          <h3>Tuty Fruity</h3>
-          <h4>body wax</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-          
-          <p>smooth and silky finish</p>
-          <p style="text-align: center">$20.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_half</i>
-              <i class="material-icons">star_border</i>
-          </div>
-        </article> -->
-
-        <!-- Product 6 -->
-        <!-- <article class="p6">
-          <div><img src="img/handsoap.jpg" alt="Product Handsoap"></div>
-          <h3>Handy Melon</h3>
-          <h4>hand soap</h4>
-          <button type="button"><i class="material-icons">thumb_up</i></button>
-         
-          <p>buttery softness</p>
-          <p style="text-align: center">$22.00</p>
-          <div class="quantity-button">
-            <input type="button" value="-" class="minus">
-            <input type="quantity" value="1" class="input-text qty text" min="1" max="" name="quantity-button" step="1" inputmode="numeric">
-            <input type="button" value="+" class="plus">
-          </div>
-          <div class="add">
-            <button id="add to cart">Add to cart</button>
-          </div>
-          <div class="rate">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star_half</i>
-          </div>
-        </article> -->
       </section>
 
       <article>
